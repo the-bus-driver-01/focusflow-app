@@ -6,8 +6,8 @@ interface UseAPIState<T> {
   error: string | null;
 }
 
-interface UseAPIOptions {
-  onSuccess?: (data: unknown) => void;
+interface UseAPIOptions<T> {
+  onSuccess?: (data: T) => void;
   onError?: (error: Error) => void;
 }
 
@@ -16,7 +16,7 @@ interface UseAPIOptions {
  */
 export const useAPI = <T,>(
   apiCall: () => Promise<T>,
-  options?: UseAPIOptions
+  options?: UseAPIOptions<T>
 ) => {
   const [state, setState] = useState<UseAPIState<T>>({
     data: null,

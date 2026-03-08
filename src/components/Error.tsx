@@ -1,11 +1,6 @@
 import React from 'react';
+import { ErrorProps } from '@/types';
 import './Error.css';
-
-interface ErrorProps {
-  title?: string;
-  message: string;
-  onRetry?: () => void;
-}
 
 const Error: React.FC<ErrorProps> = ({ title = 'Error', message, onRetry }) => {
   return (

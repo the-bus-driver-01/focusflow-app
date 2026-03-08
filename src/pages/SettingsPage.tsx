@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '@hooks/useAuth';
 import { Card, Button, Input } from '@components/index';
-import MainLayout from '@/layouts/MainLayout';
+import MainLayout from '@layouts/MainLayout';
 import './SettingsPage.css';
 
 const SettingsPage: React.FC = () => {

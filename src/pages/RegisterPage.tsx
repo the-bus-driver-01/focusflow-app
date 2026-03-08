@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '@hooks/useAuth';
 import { Input, Button, Error } from '@components/index';
-import AuthLayout from '@/layouts/AuthLayout';
+import AuthLayout from '@layouts/AuthLayout';
 import { isValidEmail, isValidPassword } from '@utils/validators';
 import './AuthPage.css';
 

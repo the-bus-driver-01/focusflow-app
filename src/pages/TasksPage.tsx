@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Input, Loading } from '@components/index';
-import MainLayout from '@/layouts/MainLayout';
+import MainLayout from '@layouts/MainLayout';
 import { Task } from '@/types';
 import './TasksPage.css';
 

@@ -1,11 +1,6 @@
 import React from 'react';
+import { LoadingProps } from '@/types';
 import './Loading.css';
-
-interface LoadingProps {
-  fullscreen?: boolean;
-  message?: string;
-  size?: 'sm' | 'md' | 'lg';
-}
 
 const Loading: React.FC<LoadingProps> = ({
   fullscreen = false,

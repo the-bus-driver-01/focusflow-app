@@ -104,6 +104,18 @@ export interface InputProps {
   className?: string;
 }
 
+export interface ErrorProps {
+  title?: string;
+  message: string;
+  onRetry?: () => void;
+}
+
+export interface LoadingProps {
+  fullscreen?: boolean;
+  message?: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
 /**
  * Common Types
  */

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@hooks/useAuth';
 import { Card, Loading } from '@components/index';
-import MainLayout from '@/layouts/MainLayout';
+import MainLayout from '@layouts/MainLayout';
 import './DashboardPage.css';
 
 const DashboardPage: React.FC = () => {
